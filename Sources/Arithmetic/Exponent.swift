@@ -8,11 +8,16 @@
 
 import Foundation
 
-infix operator **
+precedencegroup ExponentiationPrecedence {
+    associativity: right
+    higherThan: MultiplicationPrecedence
+}
+
+infix operator **: ExponentiationPrecedence
 
 // Integer case
 
-func **<T>(base: T, power: T) -> T where T: BinaryInteger {
+public func **<T>(base: T, power: T) -> T where T: BinaryInteger {
     return exponentiate(base, power)
 }
 
