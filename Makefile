@@ -20,7 +20,7 @@ bump:
 	rbenv exec bundle exec migrate-changelog CHANGELOG.md `vrsn --read --file FastMath.podspec`
 
 prerelease:
-	rbenv exec bundle exec prerelease-podspec FastMath --allow-warnings --skip-tests
+	rbenv exec bundle exec prerelease-podspec FastMath.podspec --allow-warnings --skip-tests
 
 release:
-	rbenv exec bundle exec release-podspec FastMath --repo tworingsoft --allow-warnings --skip-tests
+	rbenv exec bundle exec release-podspec FastMath.podspec --repo tworingsoft --allow-warnings --skip-tests
