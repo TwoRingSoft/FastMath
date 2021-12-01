@@ -1,0 +1,27 @@
+{
+  "entries": {
+    "tap": {
+      "tworingsoft/formulae": {
+        "revision": "fabbcb0baee5551bdd236378d78a036e787ba53b"
+      }
+    },
+    "brew": {
+      "vrsn": {
+        "version": "2.1.0",
+        "bottle": false
+      }
+    }
+  },
+  "system": {
+    "macos": {
+      "catalina": {
+        "HOMEBREW_VERSION": "3.3.6",
+        "HOMEBREW_PREFIX": "/usr/local",
+        "Homebrew/homebrew-core": "762b43a59b436b913ca1d613105e9af3caf58f4f",
+        "CLT": "12.4.0.0.1.1610135815",
+        "Xcode": "12.4",
+        "macOS": "10.15.7"
+      }
+    }
+  }
+}

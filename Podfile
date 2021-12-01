@@ -6,11 +6,11 @@ workspace 'FastMath.xcworkspace'
 abstract_target 'FastMathTestHarnessPods' do
   pod 'FastMath', :path => '.', :testspecs => ['Tests']
   pod 'Pippin/Extensions'
-  
+
   target 'FastMathTestHarness' do
-    platform :ios, '11.0'
+    platform :ios, '12.0'
   end
   target 'FastMathTestHarness-macOS' do
-    platform :osx, '10.14'
+    platform :osx, '10.12'
   end
 end

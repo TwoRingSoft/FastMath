@@ -2,3 +2,4 @@ ${PODS_ROOT}/Target Support Files/FastMath-macOS/FastMath-macOS-Unit-Tests-frame
 ${BUILT_PRODUCTS_DIR}/FastMath-macOS/FastMath.framework
 ${BUILT_PRODUCTS_DIR}/PippinLibrary-macOS/PippinLibrary.framework
 ${BUILT_PRODUCTS_DIR}/Anchorage-macOS/Anchorage.framework
+${BUILT_PRODUCTS_DIR}/Then-macOS/Then.framework

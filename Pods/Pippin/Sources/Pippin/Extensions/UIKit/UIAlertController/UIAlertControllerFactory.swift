@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UIViewController {
+@objc public extension UIViewController {
 
     func confirmDestructiveAction(actionName: String, message: String, cancelLabel: String, actionBlock: @escaping (() -> ())) {
         showConfirmationAlert(withTitle: "Confirm \(actionName)", message: message, confirmTitle: "Yes, \(actionName)", cancelTitle: cancelLabel, style: .actionSheet, completion: { confirmed in
@@ -18,7 +18,7 @@ public extension UIViewController {
         })
     }
 
-    public func showAlert(withTitle title: String? = nil, message: String? = nil, confirmTitle: String = "OK", completion: (() -> ())? = nil) {
+    func showAlert(withTitle title: String? = nil, message: String? = nil, confirmTitle: String = "OK", completion: (() -> ())? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: confirmTitle, style: .destructive, handler: { action in
             completion?()

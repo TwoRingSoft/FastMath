@@ -1,12 +1,16 @@
 PODS:
-  - Anchorage (4.3.1)
-  - FastMath (3.0.0):
-    - PippinLibrary (~> 1)
-  - FastMath/Tests (3.0.0):
-    - PippinLibrary (~> 1)
-  - Pippin/Extensions (13.0.0)
-  - PippinLibrary (1.1.0):
+  - Anchorage (4.5.0)
+  - Closures (0.7)
+  - FastMath (4.0.0):
+    - PippinLibrary (~> 2)
+  - FastMath/Tests (4.0.0):
+    - PippinLibrary (~> 2)
+  - Pippin/Extensions (15.0.0)
+  - PippinLibrary (2.6.0):
     - Anchorage
+    - Closures
+    - Then
+  - Then (2.7.0)
 
 DEPENDENCIES:
   - FastMath (from `.`)
@@ -14,22 +18,25 @@ DEPENDENCIES:
   - Pippin/Extensions
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - Pippin
   trunk:
     - Anchorage
+    - Closures
+    - Pippin
     - PippinLibrary
+    - Then
 
 EXTERNAL SOURCES:
   FastMath:
     :path: "."
 
 SPEC CHECKSUMS:
-  Anchorage: a187da0bc9b07440637d42c8744b8c82a4490295
-  FastMath: e8a7792a918e93db17a2d79c0d1cc53dd10342cc
-  Pippin: 197fd2b93364a4f7aaedf793e6aeec82c4c436a6
-  PippinLibrary: a4b8a1f5c7e64239639d81b10a9c995583becdbf
+  Anchorage: 1961bc81c84aeed54ad7ffc697c50cd9de748ba6
+  Closures: a83b9892a5b1c4125a9dfcd53e2754db5d7f6d22
+  FastMath: 8e3db953b1e753c36a05862ba9a961f69de08210
+  Pippin: 5a1fe3d057409dbd5ce3b5ae27115db9f8f127bc
+  PippinLibrary: 8e42df6b8586738ad5832a3e496b3bd111e24690
+  Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: efab0e757754c6c332f42b2b443de8f0ad9ead80
+PODFILE CHECKSUM: e3b1ca67807a87d9ed6ac6a138c0edfa9833f11e
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.11.2

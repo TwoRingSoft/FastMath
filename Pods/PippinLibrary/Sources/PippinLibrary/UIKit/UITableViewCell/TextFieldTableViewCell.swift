@@ -25,15 +25,23 @@ public class TextFieldTableViewCell: UITableViewCell {
         contentView.backgroundColor = .clear
         selectionStyle = .none
 
+        if #available(iOS 13.0, *) {
+            textField.backgroundColor = .systemFill
+        }
+
         [textField, titleLabel].forEach {
             contentView.addSubview($0)
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
-        
+
+        titleLabel.setContentHuggingPriority(.required, for: .horizontal)
+
         [
             titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: CGFloat.horizontalMargin),
-            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: CGFloat.verticalMargin),
-            titleLabel.bottomAnchor.constraint(lessThanOrEqualTo: contentView.bottomAnchor, constant: -CGFloat.verticalMargin),
+            titleLabel.topAnchor.constraint(greaterThanOrEqualTo: contentView.topAnchor, constant: CGFloat.verticalMargin),
+            titleLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -CGFloat.verticalMargin),
+            titleLabel.firstBaselineAnchor.constraint(equalTo: textField.firstBaselineAnchor),
+            textField.topAnchor.constraint(greaterThanOrEqualTo: contentView.topAnchor, constant: CGFloat.verticalMargin),
             textField.leadingAnchor.constraint(equalTo: titleLabel.trailingAnchor, constant: CGFloat.horizontalSpacing),
             textField.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -CGFloat.horizontalMargin),
             textField.firstBaselineAnchor.constraint(equalTo: titleLabel.firstBaselineAnchor),
