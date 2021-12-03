@@ -22,6 +22,7 @@ public func **<T>(base: T, power: T) -> T where T: BinaryInteger {
 }
 
 func exponentiate<T>(_ base: T, _ power: T) -> T where T: BinaryInteger {
+    if power == 0 { return 1 }
     var result = base
     var mutablePower = power
     while mutablePower > 1 {
