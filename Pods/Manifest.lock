@@ -1,9 +1,9 @@
 PODS:
   - Anchorage (4.5.0)
   - Closures (0.7)
-  - FastMath (4.0.0):
+  - FastMath (4.1.0):
     - PippinLibrary (~> 2)
-  - FastMath/Tests (4.0.0):
+  - FastMath/Tests (4.1.0):
     - PippinLibrary (~> 2)
   - Pippin/Extensions (15.0.0)
   - PippinLibrary (2.6.0):
@@ -32,7 +32,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Anchorage: 1961bc81c84aeed54ad7ffc697c50cd9de748ba6
   Closures: a83b9892a5b1c4125a9dfcd53e2754db5d7f6d22
-  FastMath: 8e3db953b1e753c36a05862ba9a961f69de08210
+  FastMath: 0e47a7dd931cdc747404cec2f8e8682077b0534f
   Pippin: 5a1fe3d057409dbd5ce3b5ae27115db9f8f127bc
   PippinLibrary: 8e42df6b8586738ad5832a3e496b3bd111e24690
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
