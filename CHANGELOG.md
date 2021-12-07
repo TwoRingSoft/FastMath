@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+### Added
+
+- Median calculations.
+
 ---
 
 ## [4.0.0] 2020-03-08
@@ -79,12 +83,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 - `enum`s:
 	- `TrigonometricRatio` defining `cos`, `sin` etc and some helper functions.
 	- `Quadrant` defining the four parts of the Cartesian plane and some query functions.
-- `struct`s: 
+- `struct`s:
 	 - `PolarCoordinate2D`.
 	 - `CartesianCoordinate2D`.
 	 - `Angle` (with an `AngleOrientation` `enum` that needs to be reconciled with `PlanarOrientation`).
  - A function to compute distance between two `CGPoints`.
- 
+
 
 ### Fixed
 

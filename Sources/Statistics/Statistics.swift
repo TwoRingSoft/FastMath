@@ -76,6 +76,19 @@ public extension Collection where Iterator.Element == Float {
         guard count > 0 else { return 0 }
         return sum() / Float(count)
     }
+
+    var median: Float {
+        count % 2 == 0 ? evenMedian : oddMedian
+    }
+
+    var oddMedian: Float {
+        sorted()[count / 2 + 1]
+    }
+
+    var evenMedian: Float {
+        let sortedSelf = sorted()
+        return (sortedSelf[count / 2 - 1] + sortedSelf[count / 2]) / 2
+    }
     
     func variance() -> Float {
         let mean = self.mean()
@@ -147,6 +160,19 @@ public extension Collection where Iterator.Element == Double {
         guard count > 0 else { return 0 }
         return sum() / Double(count)
     }
+
+    var median: Double {
+        count % 2 == 0 ? evenMedian : oddMedian
+    }
+
+    var oddMedian: Double {
+        sorted()[count / 2 + 1]
+    }
+
+    var evenMedian: Double {
+        let sortedSelf = sorted()
+        return (sortedSelf[count / 2 - 1] + sortedSelf[count / 2]) / 2
+    }
     
     func variance() -> Double {
         let mean = self.mean()
@@ -217,6 +243,19 @@ public extension Collection where Iterator.Element == Int {
     func mean() -> Double {
         guard count > 0 else { return 0 }
         return Double(sum()) / Double(count)
+    }
+
+    var median: Int {
+        count % 2 == 0 ? evenMedian : oddMedian
+    }
+
+    var oddMedian: Int {
+        sorted()[count / 2 + 1]
+    }
+
+    var evenMedian: Int {
+        let sortedSelf = sorted()
+        return (sortedSelf[count / 2 - 1] + sortedSelf[count / 2]) / 2
     }
     
     func variance() -> Double {
