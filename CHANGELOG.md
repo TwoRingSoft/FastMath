@@ -9,6 +9,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 ### Added
 
 - Median calculations.
+- Conversion strings describing binary numbers to their integer value.
+- Compute the power set of a collection.
+
+### Fixes
+
+- Base case for exponentiation, where N^0=1. Fix its precedence and visibility.
+- Update some Gemfile depdencies.
 
 ---
 
