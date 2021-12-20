@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+### Added
+
+- Provide conversion to binary numbers via arrays of 1s and 0s.
+
 ## [4.1.0] 2021-12-06
 
 ### Added

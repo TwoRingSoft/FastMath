@@ -19,3 +19,14 @@ public extension String {
         }
     }
 }
+
+public extension Array where Element == Int {
+    /// Calculate the integer value of a binary number described in this array.
+    var decimalValueOfBinary: Int {
+        var i = 0
+        return reversed().reduce(into: 0) { (result, next) in
+            result += next * 2 ** i
+            i += 1
+        }
+    }
+}
