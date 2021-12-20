@@ -29,7 +29,7 @@ class StatisticsTests: XCTestCase {
     
     func testStatistics() {
         for testCase in testCases {
-            XCTAssertEqual(testCase.dataSet.sum(), testCase.sum, "\(testCase.dataSet)")
+            XCTAssertEqual(testCase.dataSet.sum, testCase.sum, "\(testCase.dataSet)")
             XCTAssertEqual(testCase.dataSet.mean(), testCase.mean, accuracy: 1e-11, "difference of \(fabs(testCase.dataSet.mean() - testCase.mean))")
             XCTAssertEqual(testCase.dataSet.variance(), testCase.variance, accuracy: 1e-11, "difference of \(fabs(testCase.dataSet.variance() - testCase.variance))")
             XCTAssertEqual(testCase.dataSet.standardDeviation(), testCase.stdDev, accuracy: 1e-12, "difference of \(fabs(testCase.dataSet.standardDeviation() - testCase.stdDev))")

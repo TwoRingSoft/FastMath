@@ -74,7 +74,7 @@ public typealias HistogramCount = [String: Int]
 public extension Collection where Iterator.Element == Float {
     func mean() -> Float {
         guard count > 0 else { return 0 }
-        return sum() / Float(count)
+        return sum / Float(count)
     }
 
     var median: Float {
@@ -158,7 +158,7 @@ public extension Collection where Iterator.Element == Float {
 public extension Collection where Iterator.Element == Double {
     func mean() -> Double {
         guard count > 0 else { return 0 }
-        return sum() / Double(count)
+        return sum / Double(count)
     }
 
     var median: Double {
@@ -242,7 +242,7 @@ public extension Collection where Iterator.Element == Double {
 public extension Collection where Iterator.Element == Int {
     func mean() -> Double {
         guard count > 0 else { return 0 }
-        return Double(sum()) / Double(count)
+        return Double(sum) / Double(count)
     }
 
     var median: Int {

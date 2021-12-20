@@ -73,13 +73,13 @@ class ProjectEulerTests: XCTestCase {
     }
 
     func testSum() {
-        XCTAssertEqual([1, 2, 3].sum(), 6)
+        XCTAssertEqual([1, 2, 3].sum, 6)
 
         let a: [Double] = [1.1, 2.2, 3.3]
-        XCTAssertEqual(a.sum(), 6.6)
+        XCTAssertEqual(a.sum, 6.6)
 
         let b: [Float] = [1.1, 2.2, 3.3]
-        let computedFloatSum = b.sum()
+        let computedFloatSum = b.sum
         let expectedFloatSum = Float(6.6)
         XCTAssertEqual(computedFloatSum, expectedFloatSum, accuracy: Float(0.01))
     }

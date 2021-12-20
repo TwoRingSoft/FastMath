@@ -7,30 +7,10 @@
 //
 
 import Foundation
+import PippinLibrary
 
-public extension Sequence where Iterator.Element == Float {
-
-    // sum all elements in the collection
-    func sum() -> Float {
-        return self.reduce(0, +)
+public extension Sequence where Iterator.Element: AdditiveArithmetic {
+    var sum: Iterator.Element {
+        reduce((0 as! Self.Element), +)
     }
-
-}
-
-public extension Sequence where Iterator.Element == Double {
-
-    // sum all elements in the collection
-    func sum() -> Double {
-        return self.reduce(0, +)
-    }
-    
-}
-
-public extension Sequence where Iterator.Element == Int {
-
-    // sum all elements in the collection
-    func sum() -> Int {
-        return self.reduce(0, +)
-    }
-
 }
