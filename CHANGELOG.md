@@ -8,11 +8,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ### Breaking
 
-- Change `sum()` (a function) into `sum` (a computed property).
+- Change `sum()` (a function) into `sum` (a computed property) and update their implementation.
 
 ### Added
 
 - Provide conversion to binary numbers via arrays of 1s and 0s.
+- Sums of windows in collections.
 
 ## [4.1.0] 2021-12-06
 
