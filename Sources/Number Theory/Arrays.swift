@@ -25,15 +25,6 @@ public extension Array {
 }
 
 public extension Set where Element: Comparable {
-
-    func powerSet<T>(_ set: Set<T>) -> Set<Set<T>> where T: Comparable, T: Hashable {
-        (1 ..< count).reduce(into: Set<Set<T>>()) { (result, next) in
-            combinationsRecursive(combinationSize: next).forEach {
-                result.insert($0)
-            }
-        }
-    }
-
     func combinationsRecursive<T>(combinationSize: Int) -> Set<Set<T>> where T: Comparable, T: Hashable {
         if combinationSize == 0 {
             let emptySet: Set<Set<T>> = [[]]
