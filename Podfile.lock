@@ -10,7 +10,7 @@ PODS:
     - Anchorage
     - Closures
     - Then
-  - Then (2.7.0)
+  - Then (3.0.0)
 
 DEPENDENCIES:
   - FastMath (from `.`)
@@ -35,8 +35,8 @@ SPEC CHECKSUMS:
   FastMath: 0e47a7dd931cdc747404cec2f8e8682077b0534f
   Pippin: 5a1fe3d057409dbd5ce3b5ae27115db9f8f127bc
   PippinLibrary: 8e42df6b8586738ad5832a3e496b3bd111e24690
-  Then: acfe0be7e98221c6204e12f8161459606d5d822d
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
 
 PODFILE CHECKSUM: e3b1ca67807a87d9ed6ac6a138c0edfa9833f11e
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3
