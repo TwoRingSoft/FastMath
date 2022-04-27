@@ -16,6 +16,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 - Sums of windows in collections.
 - Calculation of power sets of collection elements.
 - Protocols for Graph, Edge and Node. Implementations for edges and nodes, and an adjacency matrix based graph.
+- `Line2D` and `LineSegment2D` structs with functions for calculating intersection, perpendicular bisectors and midpoints, as well as solving for y given an x value.
 
 ## [4.1.0] 2021-12-06
 
