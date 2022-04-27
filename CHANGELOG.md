@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+## [5.0.0] 2022-04-27
+
 ### Breaking
 
 - Change `sum()` (a function) into `sum` (a computed property) and update their implementation.
