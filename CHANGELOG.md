@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+### Added
+
+- Function to calculate value of `TrigonometricRatio`s.
+
 ## [5.0.0] 2022-04-27
 
 ### Breaking

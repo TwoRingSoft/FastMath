@@ -72,4 +72,34 @@ public enum TrigonometricRatio: Int {
             arc, hypotenuse, chord, sine, sineOpposite, cosineOpposite, cosine, tangent, secant, cosecant, cotangent, versine, coversine, exsecant, excosecant
         ]
     }
+
+    public func solve(for angle: Angle) -> Double {
+        switch self {
+        case .arc: return angle.radians
+        case .hypotenuse: return 1 // hardcoded for unit circle; TODO: generalize
+        case .chord: return hypot(TrigonometricRatio.versine.solve(for: angle), TrigonometricRatio.sine.solve(for: angle))
+        case .sine: return sin(angle.radians)
+        case .cosine: return cos(angle.radians)
+        case .sineOpposite: return TrigonometricRatio.sine.solve(for: angle)
+        case .cosineOpposite: return TrigonometricRatio.cosine.solve(for: angle)
+        case .tangent: return tan(angle.radians)
+        case .secant:
+            let cosine = TrigonometricRatio.cosine.solve(for: angle)
+            return cosine == 0 ? Double.nan : 1 / cosine
+        case .cosecant:
+            let sine = TrigonometricRatio.sine.solve(for: angle)
+            return sine == 0 ? Double.nan : 1 / sine
+        case .cotangent:
+            let tangent = TrigonometricRatio.tangent.solve(for: angle)
+            return tangent == 0 ? Double.nan : 1 / tangent
+        case .versine: return 1 - TrigonometricRatio.cosine.solve(for: angle)
+        case .coversine: return 1 - TrigonometricRatio.sine.solve(for: angle)
+        case .exsecant:
+            let secant = TrigonometricRatio.secant.solve(for: angle)
+            return secant.isNaN ? Double.nan : secant - 1
+        case .excosecant:
+            let cosecant = TrigonometricRatio.cosecant.solve(for: angle)
+            return cosecant.isNaN ? Double.nan : cosecant - 1
+        }
+    }
 }
