@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.test_spec 'Tests' do |test_spec|
     test_spec.source_files = 'Tests/**/*.swift'
   end
-  s.dependency 'PippinLibrary', '~> 2'
+  s.dependency 'PippinLibrary', '~> 3'
 end
